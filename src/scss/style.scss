@@ -214,6 +214,34 @@ ul {
 
 .brands {
   margin-top: 16px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+  }
+  &__link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.section {
   &__header {
     padding: 16px 0;
     margin-bottom: 24px;
@@ -225,17 +253,34 @@ ul {
       color: #7e7e82;
     }
   }
+}
+.technique {
   &__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
   }
   &__item {
-    width: 240px;
-    height: 72px;
-    margin-bottom: 16px;
+    margin-right: 32px;
+
     background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 6px;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    text-decoration: none;
+
+    p {
+      margin: 0;
+    }
+    img {
+      margin-top: auto;
+    }
   }
 }
