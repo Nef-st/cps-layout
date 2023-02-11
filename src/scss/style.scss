@@ -1,8 +1,15 @@
 $bgColorMain: #f8f8f8;
 $bgColorAside: #fff;
 
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
-  font-family: 'TT Lakes Neue', sans-serif;
+  font-family: 'TT Lakes', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #1b1c21;
@@ -16,6 +23,10 @@ body {
 }
 ul {
   list-style-type: none;
+  padding: 0;
+}
+p {
+  margin: 0;
 }
 .button {
   cursor: pointer;
@@ -123,7 +134,7 @@ ul {
   width: 100%;
   min-height: 100vh;
   background: $bgColorMain;
-  padding: 25px 0;
+  padding: 25px;
 
   &__header {
     display: flex;
@@ -286,6 +297,86 @@ ul {
     }
     img {
       margin-top: auto;
+    }
+  }
+}
+.price-list {
+  &__offer {
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.2px;
+
+    color: #1b1c21;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 425px;
+    max-width: 100%;
+    &--link {
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #1b1c21;
+      &::before {
+        display: block;
+        background: url('../img/goside.svg') no-repeat 50% 50%;
+        width: 1000px;
+        height: 10000px;
+      }
+    }
+  }
+  &__table {
+    display: grid;
+    &--link {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      width: 120px;
+      height: 32px;
+      padding: 4px 12px;
+      background: #ff3e79;
+      border-radius: 20px;
+      p {
+        position: relative;
+        font-family: 'TT Lakes';
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    &--row {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 18px;
+
+      letter-spacing: 0.2px;
+
+      color: #1b1c21;
+
+      display: grid;
+      padding: 25px 0;
+      grid-template-columns:
+        minmax(372px, 50%)
+        minmax(74px, 25%)
+        minmax(85px, 180px)
+        120px;
+    }
+    tbody {
+      padding: 0 25px;
+      background: #ffffff;
+      border-radius: 6px;
+    }
+    thead {
+      padding: 0 25px;
+    }
+    &--content {
+      text-align: start;
+      color: #7e7e82;
     }
   }
 }
