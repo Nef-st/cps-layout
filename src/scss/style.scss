@@ -301,6 +301,7 @@ p {
   }
 }
 .price-list {
+  margin-bottom: 50px;
   &__offer {
     font-family: 'TT Lakes';
     font-size: 14px;
@@ -314,6 +315,7 @@ p {
     width: 425px;
     max-width: 100%;
     &--link {
+      position: relative;
       font-family: 'TT Lakes';
       font-size: 16px;
       line-height: 24px;
@@ -321,10 +323,13 @@ p {
       text-decoration: none;
       color: #1b1c21;
       &::before {
-        display: block;
-        background: url('../img/goside.svg') no-repeat 50% 50%;
-        width: 1000px;
-        height: 10000px;
+        position: absolute;
+        top: 0;
+        right: -24px;
+        content: '';
+        background: url(../img/more.svg) no-repeat 50% 50%;
+        width: 24px;
+        height: 24px;
       }
     }
   }
@@ -378,5 +383,22 @@ p {
       text-align: start;
       color: #7e7e82;
     }
+  }
+}
+
+/*######################################*/
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  p:first-child {
+    text-align: left;
+  }
+  p:nth-child(2) {
+    text-align: center;
+  }
+  p:last-child {
+    text-align: right;
   }
 }
