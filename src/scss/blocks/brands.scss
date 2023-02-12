@@ -1,0 +1,29 @@
+.brands {
+  padding: 0 25px;
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    gap: 32px 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+
+    &--item {
+      display: flex;
+      box-sizing: border-box;
+      width: 240px;
+      height: 72px;
+      padding: 16px;
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+    }
+    &--link {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
