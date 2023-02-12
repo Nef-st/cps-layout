@@ -1,3 +1,4 @@
+@import './blocks/main-nav.scss';
 @import './blocks/about-us.scss';
 @import './blocks/brands.scss';
 @import './blocks/technique.scss';
@@ -162,40 +163,6 @@ p {
   &__button > span {
     margin: auto;
     margin-right: 10px;
-  }
-}
-
-.main-nav {
-  padding: 0 25px;
-  margin-bottom: 16px;
-  &__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    vertical-align: middle;
-  }
-  &__button {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    width: 19%;
-    height: 40px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: auto;
-    padding-left: 1%;
-    border: none;
-
-    &.activate {
-      border: 2px solid #b8ffec;
-      border-radius: 6px;
-    }
-    p {
-      margin: 0;
-      color: #7e7e82;
-    }
   }
 }
 .section {
