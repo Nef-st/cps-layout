@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  p {
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  p:first-child {
+    text-align: left;
+  }
+  p:nth-child(2) {
+    text-align: center;
+  }
+  p:last-child {
+    text-align: right;
+  }
+}

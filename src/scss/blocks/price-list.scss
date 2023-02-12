@@ -1,0 +1,104 @@
+.price-list {
+  margin-bottom: 50px;
+
+  /*  table  */
+
+  &__table {
+    display: grid;
+    thead {
+      padding: 0 25px;
+    }
+    tbody {
+      padding: 0 25px;
+      background: #ffffff;
+      border-radius: 6px;
+    }
+    td {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #1b1c21;
+    }
+    &--header {
+      //table head
+      text-align: start;
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      mix-blend-mode: normal;
+      opacity: 0.72;
+    }
+    &--row {
+      // table row
+      display: grid;
+      align-items: center;
+      column-gap: 20px;
+      height: 64px;
+      grid-template-columns:
+        minmax(372px, 50%)
+        minmax(74px, 25%)
+        minmax(85px, 180px)
+        120px;
+      border-bottom: 1px solid #eaeaea;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &--link {
+      //  order link
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      width: 120px;
+      height: 32px;
+      padding: 4px 12px;
+      background: #ff3e79;
+      border-radius: 20px;
+      p {
+        position: relative;
+        font-family: 'TT Lakes';
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+
+  /*  offer  */
+
+  &__offer {
+    margin-top: 32px;
+    width: 425px;
+    max-width: 100%;
+    &--text {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #1b1c21;
+      margin-bottom: 16px;
+    }
+    &--link {
+      position: relative;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #1b1c21;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -24px;
+        width: 24px;
+        height: 24px;
+        background: url(../img/more.svg) no-repeat 50% 50%;
+      }
+    }
+  }
+}

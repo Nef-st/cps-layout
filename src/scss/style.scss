@@ -1,3 +1,6 @@
+@import './blocks/price-list.scss';
+@import './blocks/footer.scss';
+
 $bgColorMain: #f8f8f8;
 $bgColorAside: #fff;
 
@@ -52,31 +55,6 @@ p {
   }
 }
 
-.aside {
-  display: flex;
-  flex-direction: column;
-  width: 360px;
-  min-height: 100vh;
-  height: 100%;
-  background: $bgColorAside;
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-  }
-  &__footer {
-    margin-top: auto;
-    padding: 0 19px;
-  }
-  &__number > span {
-    font-style: bold;
-    font-size: 34px;
-    line-height: 38px;
-
-    letter-spacing: -0.6px;
-  }
-}
 .language {
   display: flex;
   padding: 0;
@@ -298,107 +276,5 @@ p {
     img {
       margin-top: auto;
     }
-  }
-}
-.price-list {
-  margin-bottom: 50px;
-  &__offer {
-    font-family: 'TT Lakes';
-    font-size: 14px;
-    line-height: 20px;
-
-    letter-spacing: 0.2px;
-
-    color: #1b1c21;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    width: 425px;
-    max-width: 100%;
-    &--link {
-      position: relative;
-      font-family: 'TT Lakes';
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      text-decoration: none;
-      color: #1b1c21;
-      &::before {
-        position: absolute;
-        top: 0;
-        right: -24px;
-        content: '';
-        background: url(../img/more.svg) no-repeat 50% 50%;
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-  &__table {
-    display: grid;
-    &--link {
-      display: flex;
-      justify-content: space-between;
-      text-decoration: none;
-      width: 120px;
-      height: 32px;
-      padding: 4px 12px;
-      background: #ff3e79;
-      border-radius: 20px;
-      p {
-        position: relative;
-        font-family: 'TT Lakes';
-        font-size: 12px;
-        line-height: 24px;
-        letter-spacing: -0.15px;
-        text-transform: uppercase;
-        color: #fff;
-      }
-    }
-    &--row {
-      font-family: 'TT Lakes';
-      font-size: 14px;
-      line-height: 18px;
-
-      letter-spacing: 0.2px;
-
-      color: #1b1c21;
-
-      display: grid;
-      padding: 25px 0;
-      grid-template-columns:
-        minmax(372px, 50%)
-        minmax(74px, 25%)
-        minmax(85px, 180px)
-        120px;
-    }
-    tbody {
-      padding: 0 25px;
-      background: #ffffff;
-      border-radius: 6px;
-    }
-    thead {
-      padding: 0 25px;
-    }
-    &--content {
-      text-align: start;
-      color: #7e7e82;
-    }
-  }
-}
-
-/*######################################*/
-
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 21px;
-  p:first-child {
-    text-align: left;
-  }
-  p:nth-child(2) {
-    text-align: center;
-  }
-  p:last-child {
-    text-align: right;
   }
 }
