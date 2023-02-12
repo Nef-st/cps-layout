@@ -1,3 +1,4 @@
+@import './blocks/technique.scss';
 @import './blocks/price-list.scss';
 @import './blocks/footer.scss';
 
@@ -244,37 +245,6 @@ p {
       text-transform: uppercase;
 
       color: #7e7e82;
-    }
-  }
-}
-.technique {
-  padding: 0 25px;
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 0;
-  }
-  &__item {
-    margin-right: 32px;
-
-    background: #ffffff;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-  }
-  &__link {
-    display: flex;
-    justify-content: space-between;
-    width: 240px;
-    height: 160px;
-    padding: 16px;
-    text-decoration: none;
-
-    p {
-      margin: 0;
-    }
-    img {
-      margin-top: auto;
     }
   }
 }
