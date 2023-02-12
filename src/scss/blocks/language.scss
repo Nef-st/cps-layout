@@ -1,0 +1,17 @@
+.language {
+  display: flex;
+  padding: 0;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.2px;
+  &__button.active > a {
+    color: #7e7e82;
+  }
+  &__button > a {
+    color: #1b1c21;
+    margin-right: 3.5px;
+    text-decoration: none;
+  }
+}

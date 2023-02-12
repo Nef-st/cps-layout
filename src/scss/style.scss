@@ -1,3 +1,5 @@
+@import './blocks/language.scss';
+@import './blocks/messenger.scss';
 @import './blocks/link-list.scss';
 @import './blocks/button.scss';
 @import './blocks/header.scss';
@@ -8,15 +10,10 @@
 @import './blocks/price-list.scss';
 @import './blocks/footer.scss';
 
+@import '../fonts/fonts.css';
+
 $bgColorMain: #f8f8f8;
 $bgColorAside: #fff;
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('../fonts/TTLakes-Medium.ttf');
-  font-weight: 500;
-  font-style: normal;
-}
 
 * {
   font-family: 'TT Lakes', sans-serif;
@@ -39,31 +36,6 @@ p {
   margin: 0;
 }
 
-.language {
-  display: flex;
-  padding: 0;
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  line-height: 24px;
-
-  letter-spacing: -0.2px;
-  &__button.active > a {
-    color: #7e7e82;
-  }
-  &__button > a {
-    color: #1b1c21;
-    margin-right: 3.5px;
-    text-decoration: none;
-  }
-}
-.messenger {
-  display: flex;
-  padding: 0;
-  li .button {
-    margin-right: 14px;
-  }
-}
-
 /*  containers  */
 
 .main-container {
@@ -79,5 +51,24 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+  }
+  &__footer {
+    padding-left: 20px;
+    &--email {
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1b1c21;
+      margin-bottom: 12px;
+    }
+    &--number {
+      font-family: 'TT Lakes';
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      color: #1b1c21;
+      margin-bottom: 40px;
+    }
   }
 }
