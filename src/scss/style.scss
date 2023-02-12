@@ -1,3 +1,4 @@
+@import './blocks/header.scss';
 @import './blocks/main-nav.scss';
 @import './blocks/about-us.scss';
 @import './blocks/brands.scss';
@@ -77,6 +78,7 @@ p {
 
 .section-header {
   padding: 16px 0;
+  width: calc(100% + 25px);
   margin-bottom: 24px;
   background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
 
@@ -145,35 +147,4 @@ p {
   min-height: 100vh;
   background: $bgColorMain;
   padding: 25px;
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
-    padding-bottom: 10px;
-
-    & > h1 {
-      font-size: 28px;
-      line-height: 40px;
-      margin: 0;
-      padding: 0;
-    }
-  }
-  &__buttons {
-    display: flex;
-  }
-  &__button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 190px;
-    height: 40px;
-    background: none;
-    border: none;
-  }
-  &__button > span {
-    margin: auto;
-    margin-right: 10px;
-  }
 }
