@@ -1,3 +1,5 @@
+@import './blocks/link-list.scss';
+@import './blocks/button.scss';
 @import './blocks/header.scss';
 @import './blocks/main-nav.scss';
 @import './blocks/about-us.scss';
@@ -36,58 +38,6 @@ ul {
 p {
   margin: 0;
 }
-.button {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: none;
-  &__read-more {
-    display: flex;
-    align-items: center;
-    margin-top: 14px;
-    gap: 10px;
-    background: none;
-    border: none;
-
-    p {
-      font-family: 'TT Lakes';
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      color: #1b1c21;
-    }
-  }
-  &--search {
-    border-radius: 50%;
-    background: #ff3e79 url(../img/search.svg) no-repeat 50% 50%;
-  }
-  &--phone {
-    border-radius: 50%;
-    background: #ff3e79 url(../img/phone.svg) no-repeat 50% 50%;
-  }
-  &--chat {
-    border-radius: 50%;
-    background: #ff3e79 url(../img/chat.svg) no-repeat 50% 50%;
-  }
-  &--profile {
-    border-radius: 50%;
-    background: #ff3e79 url(../img/profile.svg) no-repeat 50% 50%;
-  }
-}
-
-.section-header {
-  padding: 16px 0;
-  width: calc(100% + 25px);
-  margin-bottom: 24px;
-  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
-
-  p {
-    text-transform: uppercase;
-
-    color: #7e7e82;
-  }
-}
 
 .language {
   display: flex;
@@ -114,37 +64,20 @@ p {
   }
 }
 
-.link-list {
-  padding: 0;
-  margin-bottom: auto;
-  &__item {
-    position: relative;
-  }
-  &__item > a {
-    display: block;
-    padding: 14px;
-    padding-left: 28px;
-    text-decoration: none;
-  }
-  &__item.active > a {
-    color: #7e7e82;
-  }
-  &__item.active:before {
-    position: absolute;
-    top: 20%;
-    content: '';
-    width: 4px;
-    height: 60%;
-    border-radius: 2px;
-    background-color: #41f6d7;
-  }
-}
+/*  containers  */
 
-/*-----------------------------------------------------------------------*/
-
-.main {
-  width: 100%;
-  min-height: 100vh;
+.main-container {
   background: $bgColorMain;
   padding: 0 25px;
+}
+.aside {
+  &__container {
+    min-width: 306px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
 }

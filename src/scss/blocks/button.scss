@@ -1,0 +1,39 @@
+.button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  &__read-more {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    gap: 10px;
+    background: none;
+    border: none;
+
+    p {
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1b1c21;
+    }
+  }
+  &--search {
+    border-radius: 50%;
+    background: #ff3e79 url(../img/search.svg) no-repeat 50% 50%;
+  }
+  &--phone {
+    border-radius: 50%;
+    background: #ff3e79 url(../img/phone.svg) no-repeat 50% 50%;
+  }
+  &--chat {
+    border-radius: 50%;
+    background: #ff3e79 url(../img/chat.svg) no-repeat 50% 50%;
+  }
+  &--profile {
+    border-radius: 50%;
+    background: #ff3e79 url(../img/profile.svg) no-repeat 50% 50%;
+  }
+}
