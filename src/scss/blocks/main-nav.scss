@@ -4,30 +4,28 @@
   &__buttons {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    vertical-align: middle;
+    gap: 4px;
   }
   &__button {
     display: flex;
     align-items: center;
     text-decoration: none;
-
-    width: 19%;
     height: 40px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: auto;
-    padding-left: 1%;
-    border: none;
-
-    &.activate {
+    padding: 0 22px;
+    &--activate {
       background: #ffffff;
       border: 2px solid #b8ffec;
       border-radius: 6px;
     }
+    &:hover {
+      background: #ffffff;
+      border-radius: 6px;
+    }
     p {
-      margin: 0;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
       color: #7e7e82;
     }
   }
