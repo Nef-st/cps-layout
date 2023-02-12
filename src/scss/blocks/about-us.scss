@@ -1,0 +1,18 @@
+.about-us {
+  padding: 0 25px;
+  display: flex;
+  margin-bottom: 50px;
+  &__text {
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+
+    margin-right: 36px;
+  }
+  &__img {
+    width: 50%;
+    border-radius: 6px;
+  }
+}

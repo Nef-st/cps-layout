@@ -1,3 +1,4 @@
+@import './blocks/about-us.scss';
 @import './blocks/brands.scss';
 @import './blocks/technique.scss';
 @import './blocks/price-list.scss';
@@ -39,6 +40,22 @@ p {
   height: 40px;
   background: none;
   border: none;
+  &__read-more {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    gap: 10px;
+    background: none;
+    border: none;
+
+    p {
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1b1c21;
+    }
+  }
   &--search {
     border-radius: 50%;
     background: #ff3e79 url(../img/search.svg) no-repeat 50% 50%;
@@ -179,30 +196,6 @@ p {
       margin: 0;
       color: #7e7e82;
     }
-  }
-}
-.about-us {
-  padding: 0 25px;
-  display: flex;
-  &__text {
-    margin-right: 36px;
-  }
-  &__button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: none;
-
-    p {
-      font-style: bold;
-    }
-  }
-  &__img {
-    width: 50%;
-    height: auto;
-    border-radius: 6px;
   }
 }
 .section {
